@@ -45,9 +45,10 @@ pcall(function()
        );
    end
 end)
-]]--
 
-local req = syn.request({ Url = "https://httpbin.org/get" })
+--]]
+
+--[[local req = syn.request({ Url = "https://httpbin.org/get" })
 local parsed = game:GetService("HttpService"):JSONDecode(req.Body)
 
 syn.request({
@@ -60,3 +61,4 @@ syn.request({
       ["content"] = "Hardware ID: "..parsed.headers["Syn-Fingerprint"]
   })
 })
+--]]
