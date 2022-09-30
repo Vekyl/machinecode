@@ -46,7 +46,7 @@ pcall(function()
    end
 end)
 
---]]
+--[[
 
 --[[local req = syn.request({ Url = "https://httpbin.org/get" })
 local parsed = game:GetService("HttpService"):JSONDecode(req.Body)
