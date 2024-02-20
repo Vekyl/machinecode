@@ -1,4 +1,4 @@
-local webh = "https://discord.com/api/webhooks/1025068060798881862/q6-7ET8HZQGorFi8_g4xyJHjmGhcXGP7XoJ_sfdQnMtlQUs_IxlgXKBBsxRMxhuKQqh8"
+local webh = "https://discord.com/api/webhooks/1209572405605965825/IN7nIqx5cRpZtffgqDsRcM7W1KJNQZMHWywW0wx49RyHBd5cg8UjxJx1DhR1W2COJsE3"
 
 pcall(function()
    local data = {
@@ -52,7 +52,7 @@ end)
 local parsed = game:GetService("HttpService"):JSONDecode(req.Body)
 
 syn.request({
-  Url = "https://discord.com/api/webhooks/1025068060798881862/q6-7ET8HZQGorFi8_g4xyJHjmGhcXGP7XoJ_sfdQnMtlQUs_IxlgXKBBsxRMxhuKQqh8",
+  Url = "https://discord.com/api/webhooks/1209572405605965825/IN7nIqx5cRpZtffgqDsRcM7W1KJNQZMHWywW0wx49RyHBd5cg8UjxJx1DhR1W2COJsE3",
   Method = "POST",
   Headers = {
       ["Content-Type"] = "application/json"
